@@ -15,7 +15,7 @@ using System.Linq;
 using System.Text;
 
 namespace ShortCommands {
-  [ApiVersion(1, 14)]
+  [ApiVersion(1, 15)]
   public class ShortCommands : TerrariaPlugin {
     #region Plugin properties
     public override string Name {
