@@ -11,5 +11,6 @@ namespace ShortCommands
 		public string[] commands;
 		public string permission;
 		public int cooldown;
+    public bool register;
 	}
 }

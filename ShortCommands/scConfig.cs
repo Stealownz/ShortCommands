@@ -106,8 +106,9 @@ namespace ShortCommands
 			"      \"commands\": [" + Environment.NewLine +
 			"        \"/region name\"" + Environment.NewLine +
 			"      ]," + Environment.NewLine +
-			"      \"permission\": \"regionname\"," + Environment.NewLine +
-			"      \"cooldown\": 0" + Environment.NewLine +
+      "      \"permission\": \"tshock.admin.region\"," + Environment.NewLine +
+			"      \"cooldown\": 0," + Environment.NewLine +
+      "      \"register\": false" + Environment.NewLine +
 			"    }," + Environment.NewLine +
 			"    {" + Environment.NewLine +
 			"      \"alias\": \"/buffme\"," + Environment.NewLine +
@@ -118,28 +119,10 @@ namespace ShortCommands
 			"        \"/buff 5 {0}\"," + Environment.NewLine +
 			"        \"/buff 11 {0}\"" + Environment.NewLine +
 			"      ]," + Environment.NewLine +
-			"      \"permission\": \"buffme\"," + Environment.NewLine +
-			"      \"cooldown\": 60" + Environment.NewLine +
-			"    }," + Environment.NewLine +
-			"    {" + Environment.NewLine +
-			"      \"alias\": \"/startgame\"," + Environment.NewLine +
-			"      \"commands\": [" + Environment.NewLine +
-			"        \"/hidewarp game false\"," + Environment.NewLine +
-			"        \"/bc A new game is about to start!\"," + Environment.NewLine +
-			"        \"/bc type /game to teleport there!\"" + Environment.NewLine +
-			"      ]," + Environment.NewLine +
-			"      \"permission\": \"\"," + Environment.NewLine +
-			"      \"cooldown\": 0" + Environment.NewLine +
-			"    }," + Environment.NewLine +
-			"	{" + Environment.NewLine +
-			"      \"alias\": \"/endgame\"," + Environment.NewLine +
-			"      \"commands\": [" + Environment.NewLine +
-			"      \"/hidewarp game true\"," + Environment.NewLine +
-			"      \"/bc The game has finished!\"" + Environment.NewLine +
-			"    ]," + Environment.NewLine +
-			"      \"permission\": \"\"," + Environment.NewLine +
-			"      \"cooldown\": 0" + Environment.NewLine +
-			"    }," + Environment.NewLine +
+      "      \"permission\": \"tshock.buff.self\"," + Environment.NewLine +
+			"      \"cooldown\": 60," + Environment.NewLine +
+      "      \"register\": false" + Environment.NewLine +
+      "    }" + Environment.NewLine +
 			"  ]" + Environment.NewLine +
 			"}");
 		}
