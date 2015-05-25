@@ -60,8 +60,8 @@ namespace ShortCommands
 			}
 			catch (Exception ex)
 			{
-				Log.ConsoleError("Exception in ShortCommands Config file");
-				Log.Error(ex.ToString());
+        TShock.Log.ConsoleError("Exception in ShortCommands Config file");
+        TShock.Log.Error(ex.ToString());
 			}
 		}
 		#endregion Config
@@ -77,8 +77,8 @@ namespace ShortCommands
 			catch (Exception ex)
 			{
 				args.Player.SendErrorMessage("Error in config file! Check log for more details.");
-				Log.Error("Config Exception in ShortCommands Config file");
-				Log.Error(ex.ToString());
+				TShock.Log.Error("Config Exception in ShortCommands Config file");
+        TShock.Log.Error(ex.ToString());
 			}
 		}
 		#endregion Config Reload

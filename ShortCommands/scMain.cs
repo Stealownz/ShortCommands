@@ -15,7 +15,7 @@ using System.Linq;
 using System.Text;
 
 namespace ShortCommands {
-  [ApiVersion(1, 15)]
+  [ApiVersion(1, 17)]
   public class ShortCommands : TerrariaPlugin {
     #region Plugin properties
     public override string Name {
@@ -290,7 +290,7 @@ namespace ShortCommands {
           return;
         }
         cmdText = cmdText.Replace("%name", string.Format("\"{0}\"", sPly.tsPly.Name));
-        cmdText = cmdText.Replace("%account", string.Format("\"{0}\"", sPly.tsPly.UserAccountName));
+        cmdText = cmdText.Replace("%account", string.Format("\"{0}\"", sPly.tsPly.User.Name));
         cmdText = cmdText.Replace("%group", string.Format("\"{0}\"", sPly.tsPly.Group.Name));
 
         var args = parseParameters(cmdText);
@@ -384,7 +384,7 @@ namespace ShortCommands {
         }
 
         cmdText = cmdText.Replace("%name", string.Format("\"{0}\"", server.Name));
-        cmdText = cmdText.Replace("%account", string.Format("\"{0}\"", server.UserAccountName));
+        cmdText = cmdText.Replace("%account", string.Format("\"{0}\"", server.User.Name));
         cmdText = cmdText.Replace("%group", string.Format("\"{0}\"", server.Group.Name));
 
         var args = parseParameters(cmdText);
